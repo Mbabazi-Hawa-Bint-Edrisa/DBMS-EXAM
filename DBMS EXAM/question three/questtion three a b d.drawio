@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2024-04-22T09:17:52.465Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Lfo7CmZdfVZJ539kAL31" version="24.2.5" type="device">
+  <diagram name="Page-1" id="vqfUDEvFfdg4nDsGDT7M">
+    <mxGraphModel dx="1673" dy="1591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-2" value="Tv serie" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-3" value="serie_id&lt;div&gt;title&lt;/div&gt;&lt;div&gt;episodes&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NjgGlBMPlUD8baAyjQKF-2">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-5" value="actor" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-6" value="PK. actor_id&lt;div&gt;Actor_name&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NjgGlBMPlUD8baAyjQKF-5">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-7" value="director" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-8" value="&lt;div&gt;PK. director_id&lt;div&gt;director_name&lt;/div&gt;&lt;div&gt;FK.episode_id&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NjgGlBMPlUD8baAyjQKF-7">
+          <mxGeometry y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-9" value="episode" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-10" value="PK. episode_id&lt;div&gt;episode_title&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NjgGlBMPlUD8baAyjQKF-9">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-16" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-40" y="240" as="sourcePoint" />
+            <mxPoint x="60" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-18" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;startArrow=ERzeroToMany;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="220" y="130" as="sourcePoint" />
+            <mxPoint x="300" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-19" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="200" y="400" as="sourcePoint" />
+            <mxPoint x="300" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NjgGlBMPlUD8baAyjQKF-20" value="&lt;span style=&quot;background-color: initial;&quot;&gt;a)&amp;nbsp; Entitiies:&lt;/span&gt;&lt;div&gt;&lt;div&gt;Tv serie&lt;/div&gt;&lt;div&gt;Actor&lt;/div&gt;&lt;div&gt;Episode&amp;nbsp;&lt;/div&gt;&lt;div&gt;Director&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;d)&amp;nbsp;&lt;/div&gt;&lt;div&gt;i) Primary key is a feild that store uniquie features of an object ie. serie_id in the entity tv_serie.&lt;/div&gt;&lt;div&gt;ii) Foreign key is afeild that stores features of an object of another table in a different table.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="-270" width="260" height="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
